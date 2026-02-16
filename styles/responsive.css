@@ -1,0 +1,92 @@
+@media (min-width: 1024px) {
+  .finder {
+    padding: 2.4rem 2rem 7.2rem;
+  }
+
+  .info {
+    flex-direction: row;
+    padding: 1.7rem 1.5rem;
+    position: absolute;
+    left: 50%;
+    bottom: -4.2rem;
+    transform: translateX(-50%);
+    animation: panel-rise 700ms ease-out both;
+  }
+
+  .info__block:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .info__block::after {
+    content: "";
+    width: 1px;
+    height: 85%;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(151, 224, 255, 0.45),
+      transparent
+    );
+  }
+
+  .info__block:last-child::after {
+    display: none;
+  }
+
+  .map {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .app-footer {
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .search-bar__input {
+    padding: 1rem 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .search-bar__btn {
+    min-width: 4.4rem;
+  }
+
+  .info {
+    width: 100%;
+    border-radius: 1.6rem;
+  }
+
+  .info__block-title {
+    font-size: 1.8rem;
+  }
+
+  .map {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .app-footer {
+    padding: 0.8rem 1rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .app-footer__author {
+    font-size: 1.4rem;
+  }
+
+  .app-footer__repo {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.1rem;
+  }
+}

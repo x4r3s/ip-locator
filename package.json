@@ -1,0 +1,24 @@
+{
+  "name": "code-proj-2",
+  "version": "1.0.0",
+  "description": "Web application for tracking IP geolocation and visualizing it on an interactive map",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "start:open": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "vercel": "^50.15.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "leaflet": "^1.9.4"
+  }
+}
