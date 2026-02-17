@@ -25,10 +25,10 @@
 
 **IP Locator** is a web application for tracking IP geolocation and visualizing it on an interactive map.
 
-## 💻 Interface
+## 📸 Screenshot
 
 <p align="center">
-  <img src="./images/screenshot.png" alt="IP Locator interface" width="900">
+  <img src="./images/screenshot.png" width="900">
 </p>
 
 ---
